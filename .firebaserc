@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "dashboard-app-f9297"
-  }
+    "default": "dashboard-app-f9297",
+    "staging": "dashboard-app-staging"
+  },
+  "targets": {}
 }
