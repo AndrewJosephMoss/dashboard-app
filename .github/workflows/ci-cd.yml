@@ -36,11 +36,11 @@ jobs:
       - name: Deploy to firebase hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DASHBOARD_APP_F9297 }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_DASHBOARD_APP_F9297 }}"
           channelId: live
           projectId: dashboard-app-f9297
-  
+
   deploy_to_staging:
     if: github.ref == 'refs/heads/staging'
     needs: test_and_build
@@ -56,7 +56,7 @@ jobs:
       - name: Deploy to firebase hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: >-
             ${{ secrets.FIREBASE_SERVICE_ACCOUNT_DASHBOARD_APP_STAGING
 
