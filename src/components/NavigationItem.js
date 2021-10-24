@@ -17,6 +17,7 @@ const NavigationItem = ({
   label,
   icon,
   path,
+  onClick,
 }) => {
   const classes = useStyles();
   const [active, setActive] = useState(true);
@@ -35,6 +36,7 @@ const NavigationItem = ({
       button
       component={Link}
       to={path}
+      onClick={onClick}
     >
       <ListItemIcon>
         <SvgIcon
