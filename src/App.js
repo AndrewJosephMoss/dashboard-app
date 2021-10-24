@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link,
 } from "react-router-dom";
 import { useStyles } from "./styles/navigationStyles.js";
 const App = () => {
