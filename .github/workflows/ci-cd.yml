@@ -6,8 +6,6 @@ on:
 jobs:
   test_and_build:
     runs-on: ubuntu-latest
-    env:
-      process.env.CI: false
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
