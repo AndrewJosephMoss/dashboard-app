@@ -4,6 +4,23 @@ import { NoEncryption } from "@mui/icons-material";
 export const useStyles = makeStyles((theme) => ({
   appRoot: {
     display: "flex",
+    [theme.breakpoints.up("sm")]: {
+      flexWrap: "nowrap",
+    },
+    [theme.breakpoints.down("xs")]: {
+      flexWrap: "wrap",
+    },
+  },
+  appBar: {
+    [theme.breakpoints.up("sm")]: {
+      display: "none !important",
+    },
+  },
+  appBarSpacer: {
+    [theme.breakpoints.down("xs")]: {
+      ...theme.mixins.toolbar,
+      width: "100vw",
+    },
   },
   navigationLogo: {
     width: "30%",
